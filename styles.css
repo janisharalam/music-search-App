@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background:url(https://images.unsplash.com/photo-1735124283566-5f5707a40808?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    /* height: 10vh; */
+    background-position: cover;
+
+    /* background-color: #f0f4f8; */
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color:rgb(57, 20, 20);
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+    padding: 12px 15px;
+    border: 2px solid rgb(153, 153, 37);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hover Effect */
+#search-input:hover {
+    border-color: #918d2b;
+    background-color: #fff;
+}
+
+/* Focus Effect */
+#search-input:focus {
+    border-color: #6a4ccc;
+    box-shadow: 0 0 10px rgba(106, 76, 204, 0.6);
+    background: linear-gradient(135deg, #ffffff, #f3f1ff);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #search-input {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+  
+  #search-button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(115, 16, 16);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  #search-button:hover {
+    background-color: #6a4ccc;
+  }
+  
+  #results {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .song {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .song:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .song img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .song h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .song p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .song p strong {
+    color: #825CFF;
+  }
+  
+  .audio-preview {
+    margin-top: 10px;
+    width: 100%;
+    outline: none;
+  }
